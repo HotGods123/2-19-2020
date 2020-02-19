@@ -28,16 +28,9 @@ public class Customer extends Person
 	{
 		return customerNumber;
 	}
-	public String getMailingList()
+	public boolean getMailingList()
 	{
-		// Short form of
-		/*
-			if(mailingList)
-				return "TRUE";
-			else
-				return "FALSE";
-		*/
-		return mailingList ? "YES" : "NO";
+		return mailingList;
 	}
 
 	public static void main(String[] args)
@@ -48,6 +41,10 @@ public class Customer extends Person
 		System.out.println("Address: " + customer.getAddress());
 		System.out.println("Telephone: " + customer.getPhone());
 		System.out.println("Customer Number: " + person.getCustomerNumber());
-		System.out.println("Mailing List: " + person.getMailingList());
+		return mailingList ? "YES" : "NO";
+		if(person.getMailingList())
+			System.out.println("Mailing List: YES");
+		else 
+			System.out.println("Mailing List: NO");
 	}
 }
