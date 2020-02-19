@@ -28,7 +28,7 @@ public class Customer extends Person
 	{
 		return customerNumber;
 	}
-	public boolean getMailingList()
+	public String getMailingList()
 	{
 		// Short form of
 		/*
@@ -37,7 +37,7 @@ public class Customer extends Person
 			else
 				return "FALSE";
 		*/
-		return mailingList ? "TRUE" : "FALSE";
+		return mailingList ? "YES" : "NO";
 	}
 
 	public static void main(String[] args)
