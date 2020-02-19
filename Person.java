@@ -7,9 +7,8 @@ public class Person
 	
 	public Person()
 	{
-		name = "Darren Lim";
-		address = "Ellicott Lane";
-		phone = "609540047";
+		// Calls public Person(String n, String a, String p) constructor
+		this("Darren Lim", "Ellicott Lane", "609540047");
 	}
 	public Person(String n, String a, String p)
 	{
