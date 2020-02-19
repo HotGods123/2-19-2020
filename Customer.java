@@ -41,7 +41,6 @@ public class Customer extends Person
 		System.out.println("Address: " + customer.getAddress());
 		System.out.println("Telephone: " + customer.getPhone());
 		System.out.println("Customer Number: " + person.getCustomerNumber());
-		return mailingList ? "YES" : "NO";
 		if(person.getMailingList())
 			System.out.println("Mailing List: YES");
 		else 
