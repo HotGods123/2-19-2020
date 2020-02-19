@@ -24,17 +24,16 @@ public class PreferredCustomer extends Customer
 	}
 	public double getDiscountLevel()
 	{
-		double discount = 0;
 		if(purchases <= 500)
-			discount = 0.5;
+			discountLevel = 0.05;
 		else if(purchases <= 1000)
-			discount = 0.6;
+			discountLevel = 0.06;
 		else if(purchases <= 1500)
-			discount = 0.7;
+			discountLevel = 0.07;
 		else 
-			discount = 1.0;
+			discountLevel = 0.1;
 	
-		return discount;
+		return discountLevel;
 	}
 
 
