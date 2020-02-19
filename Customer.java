@@ -30,6 +30,13 @@ public class Customer extends Person
 	}
 	public boolean getMailingList()
 	{
+		// Short form of
+		/*
+			if(mailingList)
+				return "TRUE";
+			else
+				return "FALSE";
+		*/
 		return mailingList ? "TRUE" : "FALSE";
 	}
 
