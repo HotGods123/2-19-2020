@@ -30,10 +30,9 @@ public class Customer extends Person
 	}
 	public boolean getMailingList()
 	{
-		return true;
+		return mailingList;
 	}
-	
-	
+
 	public static void main(String[] args)
 	{
 		Customer person = new Customer();
