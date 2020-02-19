@@ -30,7 +30,7 @@ public class Customer extends Person
 	}
 	public boolean getMailingList()
 	{
-		return mailingList;
+		return mailingList ? "TRUE" : "FALSE";
 	}
 
 	public static void main(String[] args)
